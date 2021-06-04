@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">WorkIT</string>
+    <string name="workit">WorkIT</string>
+    <string name="login">Login</string>
 </resources>
