@@ -24,15 +24,11 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="4f0749ae-9381-419a-986e-5d36a6728b26">
-        <schema name="information_schema" object-types="table, view" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="4f0749ae-9381-419a-986e-5d36a6728b26">
-      <console name="workIT" type="STANDARD" schema="mysql" session="Main" />
+      <console name="workIT" type="STANDARD" schema="" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
