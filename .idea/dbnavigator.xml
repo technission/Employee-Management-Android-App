@@ -24,21 +24,59 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="4f0749ae-9381-419a-986e-5d36a6728b26">
+        <schema name="emp_info" object-types="table, view, procedure, function, constraint, index, column, dataset trigger" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="4f0749ae-9381-419a-986e-5d36a6728b26">
-      <console name="workIT" type="STANDARD" schema="" session="Main" />
+      <console name="workIT" type="STANDARD" schema="emp_info" session="Main"><![CDATA[CREATE TABLE employees (
+Employee_ID INT NOT NULL, 
+employee_Firstname VARCHAR(40) NOT NULL, 
+employee_Lastname VARCHAR(50) NOT NULL,
+employee_Address_1 VARCHAR(100) NOT NULL, 
+employee_Address_2 VARCHAR(100), 
+employee_State VARCHAR(40) NOT NULL, 
+employee_Zipcode VARCHAR(15) NOT NULL, 
+employee_Email  VARCHAR(100) NOT NULL,
+employee_Phonenumber VARCHAR(40) NOT NULL, 
+employee_Role VARCHAR(100) NOT NULL,
+PRIMARY KEY(Employee_ID)
+)
+
+CREATE TABLE emergency_contacts (
+Contact_ID INT NOT NULL,
+contact_Firstname VARCHAR(40) NOT NULL,
+contact_Lastname VARCHAR(50) NOT NULL,
+contact_Phonenumber VARCHAR(40) NOT NULL,
+contact_Relationship VARCHAR(100) NOT NULL,
+PRIMARY KEY(Contact_ID)
+
+)
+ALTER TABLE emergency_contacts
+ADD Employee_ID INT(10) NOT NULL;
+
+ALTER TABLE emergency_contacts 
+ADD CONSTRAINT fk_emergency_contacts 
+FOREIGN KEY (Employee_ID)
+REFERENCES employees(Employee_ID);]]></console>
+      <console name="workIT 1" type="STANDARD" schema="personal_info" session="Session 1" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="4f0749ae-9381-419a-986e-5d36a6728b26" />
+    <connection id="4f0749ae-9381-419a-986e-5d36a6728b26">
+      <session name="Session 1" id="4a0395a4-12c9-4d68-a6dd-18a8a5c7bf17" />
+    </connection>
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="4f0749ae-9381-419a-986e-5d36a6728b26" dataset="emp_info.test" active-filter-id="" />
     <filter-actions connection-id="4f0749ae-9381-419a-986e-5d36a6728b26" dataset="sys.sys_config" active-filter-id="" />
+    <filter-actions connection-id="4f0749ae-9381-419a-986e-5d36a6728b26" dataset="emp_info.employees" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -62,7 +100,9 @@
     <filters />
   </component>
   <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
-    <recently-used-interfaces />
+    <recently-used-interfaces>
+      <mapping database-type="MYSQL" interface-id="DEFAULT" />
+    </recently-used-interfaces>
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
