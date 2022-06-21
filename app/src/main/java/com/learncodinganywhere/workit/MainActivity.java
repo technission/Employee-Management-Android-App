@@ -17,12 +17,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         setContentView(R.layout.activity_main);
 
         Button btn = (findViewById(R.id.loginButton));
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setContentView(R.layout.activity_landing_page);
-            }
-        });
+        btn.setOnClickListener(v -> setContentView(R.layout.activity_landing_page));
     }
 
     public void showPopUp(View v) {
@@ -47,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
             case R.id.item4:
                 Toast.makeText(this, "Item 4 Clicked", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.item5:
+            case R.id.employee_info:
                 Toast.makeText(this, "Item 5 Clicked", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.item6:
@@ -55,6 +50,14 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
                 return true;
             default:
                 return false;
+        }
+    }
+
+    public void EmployeeInfo(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.employee_info) {
+            setContentView(R.layout.activity_emp_info);
         }
     }
 }
