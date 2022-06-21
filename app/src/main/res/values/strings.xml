@@ -4,4 +4,6 @@
     <string name="remember_device">Remember Device</string>
     <string name="username">Username</string>
     <string name="login">Login</string>
+    <string name="toolbarlogo">toolbarLogo</string>
+    <string name="toolbaroptions">toolbarOptions</string>
 </resources>
