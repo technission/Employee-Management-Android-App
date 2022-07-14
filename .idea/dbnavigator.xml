@@ -18,21 +18,18 @@
       <destination value="FILE" />
       <format value="EXCEL" />
       <charset value="windows-1252" />
+      <charset value="windows-1252" />
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="4f0749ae-9381-419a-986e-5d36a6728b26">
-        <schema name="emp_info" object-types="table, view, procedure, function, constraint, index, column, dataset trigger" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="4f0749ae-9381-419a-986e-5d36a6728b26">
-      <console name="workIT" type="STANDARD" schema="emp_info" session="Main"><![CDATA[CREATE TABLE employees (
+      <console name="workIT" type="STANDARD" schema="emp_info" session="Main">CREATE TABLE employees (
 Employee_ID INT NOT NULL, 
 employee_Firstname VARCHAR(40) NOT NULL, 
 employee_Lastname VARCHAR(50) NOT NULL,
@@ -61,8 +58,11 @@ ADD Employee_ID INT(10) NOT NULL;
 ALTER TABLE emergency_contacts 
 ADD CONSTRAINT fk_emergency_contacts 
 FOREIGN KEY (Employee_ID)
-REFERENCES employees(Employee_ID);]]></console>
+REFERENCES employees(Employee_ID);</console>
       <console name="workIT 1" type="STANDARD" schema="personal_info" session="Session 1" />
+    </connection>
+    <connection id="d744b8a8-4ba6-48da-9f21-4be58aceb194">
+      <console name="Connection" type="STANDARD" schema="" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
@@ -71,7 +71,10 @@ REFERENCES employees(Employee_ID);]]></console>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="4f0749ae-9381-419a-986e-5d36a6728b26">
       <session name="Session 1" id="4a0395a4-12c9-4d68-a6dd-18a8a5c7bf17" />
+      <session name="Session 1" id="4a0395a4-12c9-4d68-a6dd-18a8a5c7bf17" />
+      <session name="Session 1" id="4a0395a4-12c9-4d68-a6dd-18a8a5c7bf17" />
     </connection>
+    <connection id="d744b8a8-4ba6-48da-9f21-4be58aceb194" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="4f0749ae-9381-419a-986e-5d36a6728b26" dataset="emp_info.test" active-filter-id="" />
@@ -99,6 +102,9 @@ REFERENCES employees(Employee_ID);]]></console>
     <last-used-operator value="EQUAL" />
     <filters />
   </component>
+  <component name="DBNavigator.Project.ParserDiagnosticsManager">
+    <diagnostics-history />
+  </component>
   <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
     <recently-used-interfaces>
       <mapping database-type="MYSQL" interface-id="DEFAULT" />
@@ -106,7 +112,7 @@ REFERENCES employees(Employee_ID);]]></console>
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="4f0749ae-9381-419a-986e-5d36a6728b26" active="true">
+      <connection id="4f0749ae-9381-419a-986e-5d36a6728b26" active="true" signed="true">
         <database>
           <name value="workIT" />
           <description value="" />
@@ -122,7 +128,7 @@ REFERENCES employees(Employee_ID);]]></console>
           <database value="mysql" />
           <type value="USER_PASSWORD" />
           <user value="root" />
-          <deprecated-pwd value="MlNpbGtpZXM=" />
+          <deprecated-pwd value="TXlTUUw=" />
         </database>
         <properties>
           <auto-commit value="false" />
@@ -160,7 +166,91 @@ REFERENCES employees(Employee_ID);]]></console>
           <alternative-statement-delimiter value="" />
         </details>
         <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
-          <object-type-filter use-master-settings="true">
+          <object-type-filter>
+            <object-type name="SCHEMA" enabled="true" />
+            <object-type name="USER" enabled="true" />
+            <object-type name="ROLE" enabled="true" />
+            <object-type name="PRIVILEGE" enabled="true" />
+            <object-type name="CHARSET" enabled="true" />
+            <object-type name="TABLE" enabled="true" />
+            <object-type name="VIEW" enabled="true" />
+            <object-type name="MATERIALIZED_VIEW" enabled="true" />
+            <object-type name="NESTED_TABLE" enabled="true" />
+            <object-type name="COLUMN" enabled="true" />
+            <object-type name="INDEX" enabled="true" />
+            <object-type name="CONSTRAINT" enabled="true" />
+            <object-type name="DATASET_TRIGGER" enabled="true" />
+            <object-type name="DATABASE_TRIGGER" enabled="true" />
+            <object-type name="SYNONYM" enabled="true" />
+            <object-type name="SEQUENCE" enabled="true" />
+            <object-type name="PROCEDURE" enabled="true" />
+            <object-type name="FUNCTION" enabled="true" />
+            <object-type name="PACKAGE" enabled="true" />
+            <object-type name="TYPE" enabled="true" />
+            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
+            <object-type name="ARGUMENT" enabled="true" />
+            <object-type name="DIMENSION" enabled="true" />
+            <object-type name="CLUSTER" enabled="true" />
+            <object-type name="DBLINK" enabled="true" />
+          </object-type-filter>
+          <object-name-filters />
+        </object-filters>
+      </connection>
+      <connection id="d744b8a8-4ba6-48da-9f21-4be58aceb194" active="true" signed="true">
+        <database>
+          <name value="Connection" />
+          <description value="" />
+          <database-type value="MYSQL" />
+          <config-type value="BASIC" />
+          <database-version value="9999.0" />
+          <driver-source value="BUILTIN" />
+          <driver-library value="" />
+          <driver value="" />
+          <url-type value="DATABASE" />
+          <host value="localhost" />
+          <port value="3306" />
+          <database value="mysql" />
+          <type value="USER_PASSWORD" />
+          <user value="" />
+          <deprecated-pwd value="" />
+        </database>
+        <properties>
+          <auto-commit value="false" />
+        </properties>
+        <ssh-settings>
+          <active value="false" />
+          <proxy-host value="" />
+          <proxy-port value="22" />
+          <proxy-user value="" />
+          <deprecated-proxy-pwd value="" />
+          <auth-type value="PASSWORD" />
+          <key-file value="" />
+          <key-passphrase value="" />
+        </ssh-settings>
+        <ssl-settings>
+          <active value="false" />
+          <certificate-authority-file value="" />
+          <client-certificate-file value="" />
+          <client-key-file value="" />
+        </ssl-settings>
+        <details>
+          <charset value="UTF-8" />
+          <session-management value="true" />
+          <ddl-file-binding value="true" />
+          <database-logging value="true" />
+          <connect-automatically value="true" />
+          <restore-workspace value="true" />
+          <restore-workspace-deep value="false" />
+          <environment-type value="default" />
+          <connectivity-timeout value="5" />
+          <idle-time-to-disconnect value="30" />
+          <idle-time-to-disconnect-pool value="5" />
+          <credential-expiry-time value="10" />
+          <max-connection-pool-size value="7" />
+          <alternative-statement-delimiter value="" />
+        </details>
+        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
+          <object-type-filter>
             <object-type name="SCHEMA" enabled="true" />
             <object-type name="USER" enabled="true" />
             <object-type name="ROLE" enabled="true" />
@@ -277,11 +367,11 @@ REFERENCES employees(Employee_ID);]]></console>
         <nulls-first value="true" />
         <max-sorting-columns value="4" />
       </sorting>
-      <tracking-columns>
-        <columnNames value="" />
+      <audit-columns>
+        <column-names value="" />
         <visible value="true" />
         <editable value="false" />
-      </tracking-columns>
+      </audit-columns>
     </dataset-grid-settings>
     <dataset-editor-settings>
       <text-editor-popup>
