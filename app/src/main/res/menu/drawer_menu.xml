@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_shiftCalender"
@@ -27,6 +26,4 @@
             android:id="@+id/nav_profile"
             android:title="@string/profile" />
     </group>
-
-
 </menu>
