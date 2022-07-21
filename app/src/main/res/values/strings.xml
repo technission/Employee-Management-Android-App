@@ -7,4 +7,16 @@
     <string name="password">password</string>
     <string name="remember_device">Remember Device</string>
     <string name="login">Login</string>
+    <string name="shift_calender">Shift Calender</string>
+    <string name="messenger">Messenger</string>
+    <string name="hours_amp_pay"><![CDATA[Hours & Pay]]></string>
+    <string name="payment_info">Payment Info</string>
+    <string name="employee_info">Employee Info</string>
+    <string name="profile">Profile</string>
+    <string name="schedule">Schedule</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="avatar">avatar</string>
+    <string name="imageButton">imageButton</string>
+    <string name="toolbarLogo">toolbarLogo</string>
 </resources>
