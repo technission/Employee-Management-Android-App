@@ -19,4 +19,21 @@
     <string name="avatar">avatar</string>
     <string name="imageButton">imageButton</string>
     <string name="toolbarLogo">toolbarLogo</string>
+    <string name="shift_calender_text">Shift Calender</string>
+    <string name="schedule_text">Schedule</string>
+    <string name="messenger_text">Messenger</string>
+    <string name="hours_pay_text"><![CDATA[Hours & Pay]]></string>
+    <string name="payment_info_text">Payment Info</string>
+    <string name="profile_text">Profile</string>
+    <string name="employee_info_text">Employee Info</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="address">Address</string>
+    <string name="state">State</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="emergency_contact">Emergency Contact:</string>
+    <string name="relationship">Relationship</string>
+    <string name="save">Save</string>
 </resources>

@@ -7,6 +7,14 @@
         <entry key="app/src/main/res/layout/activity_base.xml" value="0.41271929824561404" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.41271929824561404" />
         <entry key="app/src/main/res/layout/drawer_layout.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_1.xml" value="0.4118421052631579" />
+        <entry key="app/src/main/res/layout/fragment_employee.xml" value="0.34438775510204084" />
+        <entry key="app/src/main/res/layout/fragment_hours.xml" value="0.4118421052631579" />
+        <entry key="app/src/main/res/layout/fragment_messenger.xml" value="0.4118421052631579" />
+        <entry key="app/src/main/res/layout/fragment_payment.xml" value="0.4118421052631579" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.4118421052631579" />
+        <entry key="app/src/main/res/layout/fragment_schedule.xml" value="0.4118421052631579" />
+        <entry key="app/src/main/res/layout/fragment_shift.xml" value="0.4118421052631579" />
         <entry key="app/src/main/res/layout/nav_header.xml" value="0.4118421052631579" />
         <entry key="app/src/main/res/menu/drawer_menu.xml" value="0.40595340811044006" />
       </map>
