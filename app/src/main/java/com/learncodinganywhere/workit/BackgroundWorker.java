@@ -31,7 +31,6 @@ public class BackgroundWorker extends AsyncTask<String, Void, String> {
         String save_url = "http://192.168.1.94/dbconfig.php";
         if (type.equals("save")) {
             try {
-                Log.i("myTag", "on save run");
                 String fname = params[1];
                 String lname = params[2];
                 String address1 = params[3];
@@ -69,7 +68,7 @@ public class BackgroundWorker extends AsyncTask<String, Void, String> {
                 bufferedWriter.close();
                 outputStream.close();
                 InputStream inputStream = httpURLConnection.getInputStream();
-                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
                 String result = "";
                 String line = "";
                 while ((line = bufferedReader.readLine()) != null) {

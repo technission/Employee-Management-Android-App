@@ -1,5 +1,7 @@
 package com.learncodinganywhere.workit;
 
+import static java.lang.String.valueOf;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -40,20 +42,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Erelationship = findViewById(R.id.erelationship_field);
     }
 
-    public void onClick(View view){
-        String fname = Fname.getText().toString();
-        String lname = Lname.getText().toString();
-        String address1 = Address1.getText().toString();
-        String address2 = Address2.getText().toString();
-        String state = State.getText().toString();
-        String zip = Zip.getText().toString();
-        String email = Email.getText().toString();
-        String phone = Phone.getText().toString();
-        String efname = Efname.getText().toString();
-        String elname = Elname.getText().toString();
-        String ephone = Ephone.getText().toString();
-        String erelationship = Erelationship.getText().toString();
+    public void onClick(View view) {
         String type = "save";
+        String fname = String.valueOf(Fname);
+        String lname = String.valueOf(Lname);
+        String address1 = String.valueOf(Address1);
+        String address2 = String.valueOf(Address2);
+        String state = String.valueOf(State);
+        String zip = String.valueOf(Zip);
+        String email = String.valueOf(Email);
+        String phone = String.valueOf(Phone);
+        String efname = String.valueOf(Efname);
+        String elname = String.valueOf(Elname);
+        String ephone = String.valueOf(Ephone);
+        String erelationship = valueOf(Erelationship);
 
         BackgroundWorker backgroundWorker = new BackgroundWorker(this);
         backgroundWorker.execute(type, fname, lname, address1, address2, state, zip, email, phone, efname, elname, ephone, erelationship);
