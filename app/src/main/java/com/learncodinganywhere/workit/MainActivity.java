@@ -6,20 +6,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.ListView;
-import android.widget.PopupMenu;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.textfield.TextInputEditText;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -60,9 +53,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         String elname = Elname.getText().toString();
         String ephone = Ephone.getText().toString();
         String erelationship = Erelationship.getText().toString();
+        String type = "save";
 
         BackgroundWorker backgroundWorker = new BackgroundWorker(this);
-        backgroundWorker.execute(fname, lname, address1, address2, state, zip, email, phone, efname, elname, ephone, erelationship);
+        backgroundWorker.execute(type, fname, lname, address1, address2, state, zip, email, phone, efname, elname, ephone, erelationship);
     }
 
 

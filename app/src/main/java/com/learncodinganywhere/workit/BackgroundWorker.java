@@ -1,9 +1,9 @@
 package com.learncodinganywhere.workit;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.os.AsyncTask;
-
-import androidx.appcompat.app.AlertDialog;
+import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -31,6 +31,7 @@ public class BackgroundWorker extends AsyncTask<String, Void, String> {
         String save_url = "http://192.168.1.94/dbconfig.php";
         if (type.equals("save")) {
             try {
+                Log.i("myTag", "on save run");
                 String fname = params[1];
                 String lname = params[2];
                 String address1 = params[3];
