@@ -27,13 +27,12 @@
         android:id="@+id/close"
         android:layout_width="64dp"
         android:layout_height="62dp"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
+        android:contentDescription="@string/todo"
+        android:onClick="closePopUp"
         android:src="@drawable/ic_close"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <View
@@ -131,6 +130,7 @@
         android:layout_marginVertical="16dp"
         android:layout_marginStart="16dp"
         android:text="@string/employee_info"
+        android:onClick="EmployeeInfo"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="18sp"
