@@ -6,4 +6,12 @@
     <string name="login">Login</string>
     <string name="toolbarlogo">toolbarLogo</string>
     <string name="toolbaroptions">toolbarOptions</string>
+    <string name="todo">TODO</string>
+    <string name="shift_calendar">Shift Calendar</string>
+    <string name="shedule">Shedule</string>
+    <string name="messenger">Messenger</string>
+    <string name="hours_amp_pay"><![CDATA[Hours & Pay]]></string>
+    <string name="payment_info">Payment Info</string>
+    <string name="employee_info">Employee Info</string>
+    <string name="profile">Profile</string>
 </resources>

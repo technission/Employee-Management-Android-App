@@ -2,6 +2,7 @@ package com.learncodinganywhere.workit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -27,25 +28,26 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         popup.show();
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onMenuItemClick(MenuItem menuItem) {
         switch (menuItem.getItemId()) {
-            case R.id.item1:
+            case R.id.schedule:
                 Toast.makeText(this, "Item 1 Clicked", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.item2:
+            case R.id.messenger:
                 Toast.makeText(this, "Item 2 Clicked", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.item3:
+            case R.id.pay:
                 Toast.makeText(this, "Item 3 Clicked", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.item4:
+            case R.id.paymentInfo:
                 Toast.makeText(this, "Item 4 Clicked", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.employee_info:
                 Toast.makeText(this, "Item 5 Clicked", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.item6:
+            case R.id.profile:
                 Toast.makeText(this, "Item 6 Clicked", Toast.LENGTH_SHORT).show();
                 return true;
             default:
