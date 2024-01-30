@@ -42,7 +42,5 @@ public class Emp_Info extends AppCompatActivity { //interacts with activity_emp_
         eContactPhone = findViewById(R.id.etContactPhone);
         eContactRelation = findViewById(R.id.etContactRelation);
         bSave =  findViewById(R.id.btnSave);  //need onClick etc
-
     }
-
 }
