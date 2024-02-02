@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "491729133265",
+    "project_id": "workit-65e27",
+    "storage_bucket": "workit-65e27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491729133265:android:d54a7c74a88c1e5d09eff0",
+        "android_client_info": {
+          "package_name": "com.learncodinganywhere.workit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEXU4gWd7il8Cdoi10oCJEqEsg3K79TQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
