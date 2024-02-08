@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item android:title="Shift Calendar"
+        android:id="@+id/shift_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    </item>
+    <item android:title="Schedule"
+        android:id="@+id/schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <item android:title="Messenger"
+        android:id="@+id/messenger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <item android:title="Hours &amp; Pay"
+        android:id="@+id/hours_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <item android:title="Payment Info"
+        android:id="@+id/payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <item android:title="Employee Info"
+        android:id="@+id/emp_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <item android:title="Profile"
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</menu>
