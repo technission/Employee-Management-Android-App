@@ -9,8 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WorkIT">
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".Schedule"
+            android:exported="false" />
+        <activity
+            android:name=".Empl_info"
+            android:exported="false" />
+        <activity
+            android:name=".DrawerBaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".MainActivity"
             android:exported="true"
+            android:windowSoftInputMode="adjustNothing"
             tools:ignore="Instantiatable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
