@@ -30,7 +30,7 @@
         android:text="First name"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/input_fName"
-        app:layout_constraintEnd_toStartOf="@+id/label_lnam"
+        app:layout_constraintEnd_toStartOf="@+id/label_lname"
         app:layout_constraintHorizontal_bias="0.273"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -44,7 +44,7 @@
         android:text="First name"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/label_lnam"
+        app:layout_constraintEnd_toStartOf="@+id/label_lname"
         app:layout_constraintHorizontal_bias="0.27"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -64,7 +64,7 @@
         app:layout_constraintVertical_bias="0.603" />
 
     <TextView
-        android:id="@+id/label_lnam"
+        android:id="@+id/label_lname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Last name"
@@ -76,7 +76,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.898" />
 
-    <TextView
+    <EditText
         android:id="@+id/input_fName"
         android:layout_width="150dp"
         android:layout_height="25dp"
@@ -89,7 +89,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.121" />
 
-    <TextView
+    <EditText
         android:id="@+id/input_efName"
         android:layout_width="150dp"
         android:layout_height="25dp"
@@ -102,12 +102,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.648" />
 
-    <TextView
+    <EditText
         android:id="@+id/input_state"
         android:layout_width="150dp"
         android:layout_height="25dp"
         android:layout_marginStart="30dp"
-
         android:background="@drawable/border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/input_zip"
@@ -116,7 +115,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.32" />
 
-    <TextView
+    <EditText
         android:id="@+id/input_zip"
         android:layout_width="150dp"
         android:layout_height="25dp"
@@ -130,7 +129,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.32" />
 
-    <TextView
+    <EditText
         android:id="@+id/input_lName"
         android:layout_width="150dp"
         android:layout_height="25dp"
@@ -143,7 +142,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.121" />
 
-    <TextView
+    <EditText
         android:id="@+id/input_elName"
         android:layout_width="150dp"
         android:layout_height="25dp"
@@ -237,7 +236,7 @@
         app:layout_constraintTop_toBottomOf="@+id/label_eFirstName"
         app:layout_constraintVertical_bias="0.16" />
 
-    <TextView
+    <EditText
         android:id="@+id/input_addressA"
         android:layout_width="310dp"
         android:layout_height="25dp"
@@ -251,7 +250,7 @@
         app:layout_constraintTop_toTopOf="@+id/label_address"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
+    <EditText
         android:id="@+id/input_email"
         android:layout_width="310dp"
         android:layout_height="25dp"
@@ -265,7 +264,7 @@
         app:layout_constraintTop_toBottomOf="@+id/label_email"
         app:layout_constraintVertical_bias="0.01" />
 
-    <TextView
+    <EditText
         android:id="@+id/input_phone"
         android:layout_width="310dp"
         android:layout_height="25dp"
@@ -278,7 +277,7 @@
         app:layout_constraintTop_toBottomOf="@+id/label_phone"
         app:layout_constraintVertical_bias="0.012" />
 
-    <TextView
+    <EditText
         android:id="@+id/input_ePhone"
         android:layout_width="310dp"
         android:layout_height="25dp"
@@ -291,7 +290,7 @@
         app:layout_constraintTop_toBottomOf="@+id/label_phone"
         app:layout_constraintVertical_bias="0.48" />
 
-    <TextView
+    <EditText
         android:id="@+id/input_eRelationship"
         android:layout_width="310dp"
         android:layout_height="25dp"
@@ -305,7 +304,7 @@
         app:layout_constraintTop_toBottomOf="@+id/input_ePhone"
         app:layout_constraintVertical_bias="0.62" />
 
-    <TextView
+    <EditText
         android:id="@+id/input_addressB"
         android:layout_width="310dp"
         android:layout_height="25dp"
